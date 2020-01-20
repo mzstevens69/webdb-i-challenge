@@ -2,11 +2,13 @@ const express = require('express');
 
 const db = require('./data/dbConfig.js');
 
+const acctRouter = require("./accounts/accounts-router")
+
 const server = express();
 
 server.use(express.json());
 
-server.use("/accounts", db);
+server.use("/accounts", acctRouter);
 
 server.get("/", (req, res) => {
     res.send("<h1>Db one working</h1>")
