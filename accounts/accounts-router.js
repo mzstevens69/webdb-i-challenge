@@ -119,7 +119,7 @@ router.delete("/:id", asyncHandler(async (req, res, next) => {
         res.status(204).end()
    
 }))
-function accountIsValid({ name, budget }) {
-    return name && typeof budget === 'number' && budget >= 0;
-  }
+// function accountIsValid({ name, budget }) {
+//     return name && typeof budget === 'number' && budget >= 0;
+//   }
 module.exports = router;
