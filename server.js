@@ -11,7 +11,7 @@ server.use(express.json());
 server.use("/accounts", acctRouter);
 
 server.get("/", (req, res) => {
-    res.send("<h1>Db one working</h1>")
+    res.send("<h1>We are working now!</h1>")
 })
 server.use((err, req, res, next) => {
     console.log(err)
